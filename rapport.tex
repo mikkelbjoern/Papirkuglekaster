@@ -1,4 +1,4 @@
-\documentclass[10pt,a4paper]{article}
+\documentclass[12pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[danish]{babel}
 \usepackage{amsmath}
@@ -104,7 +104,7 @@
 \section{Formål}
 Jeg vil i denne rapport beskrive en elastikkanon vi har bygget. 
 Vi forsøgte at skyde en papirkugle 4 meter ind i en cirkel med en halv meters diameter.
-Jeg vil forsøge at beskrive relevante fysiske sammenhænge, der kan forklare hvordan kanonen kunne bygges præcist. 
+Jeg vil forsøge at beskrive relevante fysiske sammenhænge, der kan forklare hvordan kanonen kunne bygges til at skyde præcist. 
 Til sidst vil jeg forsøge at forklare hvorfor det ikke lykkedes os at ramme cirklen.
 
 \section{Teori}
@@ -112,9 +112,25 @@ Vores opstilling kan betragtes som en bevægelse i to dimensioner.
 Jeg vil forsøge at beskrive denne bevægelse ved at betragte de forskellige kræfter der påvirker forsøget.
 Derudover vil jeg forsøge at beskrive en metode til at finde ud af hvor kraftigt elastikkanonen skyder, da dette er helt essentielt for at ramme præcist.
 
+\subsection{Beskrivelse af bevægelsen}
+Under bevægelsen er der kun en kraft der påvirker papirkuglen nemlig tyngdekraften.
+Derudover er der så en fart som kuglen er blevet skudt afsted med.
+Denne fart vil jeg vise en måde at beregne på i næste afsnit, men i dette afsnit vil jeg blot betegne den som $v_s$.
+Da bevægelsen forgår i to dimensioner, vil det gør beregningerne nemmere at betragte bevægelsen opdelt vandret og lodret.
+For nemmere notation vil jeg lægge et koordinatsystem ind over mit forsøg og betragte lodret som $y$ og vandret som $x$, hvor $(0,0)$ ligger ved jorden under der hvor papirkuglen skydes afsted fra.
+
+Jeg vil nu forsøge at beskrive startfarten i henholdsvis $x$
+- og $y$-retningen udfra startfarten og vinklen der skydes afsted fra i forhold til lodret - kald denne vinkel $\theta$.
+Det ses forholdvist nemt ved at tegne det som kraftpile at $v_x = cos(\theta )v_s$ og $v_y = sin(\theta )v_s$.
+
+Da der ikke er nogle kræfter der påvirker kuglen i x-retningen, kan vi lave en stedfunktion i x-retningen i forhold til tiden: $$x(t) = v_x t$$
+
+I y-retningen skal vi så også tage højde for tyngdeaccelerationen.
+Dermed får vi en stedfunktion på formen (ses fra generel stedfunktion i en dimension): $$y(t)=-\frac{1}{2}gt^2+v_yt+h$$
+hvor $h$ beskriver den højde kuglen skydes afsted over jorden.
 \begin{figure}[h]
 \center
-\caption{Skitsetegning af forsøgsopløsning.}
+\caption{Skitsetegning af forsøgsopstilling.}
 \end{figure}
 
 \end{document}
