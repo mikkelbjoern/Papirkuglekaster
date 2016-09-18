@@ -143,7 +143,7 @@ Når denne tid er bestemt, kan man nemt bestemme hvor langt fra udgangspunktet k
 
 \subsection{Bestemmelse af mundingshastigheden}
 For at beregne mundingshastigheden på vores papirkugleskydemaskine, kan man gør det at man skyder direkte op i luften fra nede fra gulvet og måle hvor lang tid det tager før kuglen rammer gulvet.
-Da vil vi have en endimensionel bevægelse med en enkelt kraft der påvirker kuglen (tyngdekraften). 
+Da vil vi have en endimensional bevægelse med en enkelt kraft der påvirker kuglen (tyngdekraften). 
 Vi må da kunne beskrive højde over jorden som en funktion $h$ af tiden:
 $$h(t)=-\frac{1}{2}gt^2 + v_{munding}t$$
 Da $t$ er en størrelse vi måler og $g$ er en kendt størrelse, vil vi nu kunne bestemme mundingshastigheden ved at finde en passende værdi for $v_{munding}$ så $h(t)=0$.
@@ -153,6 +153,12 @@ Til forsøget byggede vi en kanon som den der kan ses på figur \ref{maskine}.
 Den fungerede ved at vi trak kuglen tilbage med en elastik og slap den løs så elastikken skød kuglen afsted. 
 Ved at markere en længde elastikken skulle trækkes tilbage, kunne vi sikre at elastikken tilførte den samme mængde energi til kuglen hver gang vi skød. 
 
+\begin{figure}
+\center
+\includegraphics[scale=0.2]{papirkuglekastemaskine}
+\caption{Vores papirkugleskydemaskine}
+\label{maskine}
+\end{figure}
 
 \subsection{Bestemmelse af mundingshastighed}
 Vi startede da med at bestemme mundingshastigheden. 
@@ -172,12 +178,17 @@ $$\approx 8.3 m \cdot cos(\theta) sin(\theta)$$
 Da kunne bruge denne funktion $dis(\theta)$ til at finde en vinkel $\theta_{skud}$ sådan at $dis(\theta_{skud})=4m$.
 Dette kan gøres med et CAS-værktøj og der fås da mulighederne $\theta_{skud} = 52.73$ eller $\theta_{skud} = 37.27$.
 Vi kunne da vælge at skyde fra en af disse vinkler og skulle derefter gerne skyde 4 meter. 
-\begin{figure}
-\center
-\includegraphics[scale=0.2]{papirkuglekastemaskine}
-\caption{Vores papirkugleskydemaskine}\label{maskine}
+Vi skulle da bare skyde lige imod centrum og så burde den teoretisk ramme lige i midten.
 
-\end{figure}
+\section{Hvorfor kuglen ikke ramte plet..}
+Jeg vil indlede dette lidt sørgelige afsnit med at minde læseren om at det at fejle er en vigtig del af naturvidenskab, og at vi derfor ikke ser det som et nederlag, men snarere som et skridt på vej mod succes, at vi ikke vandt konkurrencen (- \textit{snøft} \includegraphics[scale=0.021]{sad}).
+
+Der er en del fejlkilder i dette forsøg der kunne være blevet rettet op på.
+For det første kunne vores maskine have været bygget bedre. 
+Selvom vi trak kuglen nogenlunde samme længde tilbage hver gang, var det alligevel på øjemål, så vi havde ingen sikkerhed for at kuglen fik tilført samme energi hver gang.
+Ydermere havde vi heller ikke overvejet særlig grundigt hvordan vi fik kuglen til at flyve direkte imod centrum. 
+Meget tydede på da vi testede kort at vores maskine skød en smule skævt, og derfor havde fungerer vores antagelse om at bevægelsen kan beskrives todimensionalt ikke. 
+
 
 
 
